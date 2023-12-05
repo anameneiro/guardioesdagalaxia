@@ -1,0 +1,51 @@
+@use 'variaveis';
+
+.sobre{
+    width: 100vw;
+    max-width: 100%;
+    margin: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+
+
+    &__content{
+        margin: 24px;
+
+        
+        h3{
+            font-size: 1.5em;
+            color: variaveis.$corHove2;
+        }
+
+        p{
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+
+    &__imagem{
+
+        img{
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+        h3{
+            font-size: 1em;
+            color: variaveis.$corHove2;
+            margin: 20px auto;
+        }
+
+        p{
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+}
