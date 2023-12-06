@@ -1,21 +1,23 @@
 @use 'variaveis';
 
 .sobre{
+    
     width: 100vw;
-    max-width: 100%;
+    max-width: 90%;
     margin: 24px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    justify-items: center;
-
+    justify-content: space-between;
+    
 
     &__content{
         margin: 24px;
-
+        
         
         h3{
-            font-size: 1.5em;
+            font-size: 2em;
+            font-weight: 800;
             color: variaveis.$corHove2;
         }
 
@@ -29,6 +31,7 @@
 
         img{
             max-width: 100%;
+            border-radius: 10%;
         }
     }
 

@@ -1,8 +1,8 @@
 @use 'variaveis';
 @use 'header';
 @use 'sobre';
-@use 'characters';
 @use 'elenco';
+@use 'sinopse';
 
 *{
     margin: 0;
@@ -12,50 +12,3 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-
-@mixin h2header(){
-    font-size: 3em;
-    font-weight: 800;
-    padding-top: 5%;
-    color: #F2F2F2;
-    line-height: 80%;
-}
-
-@mixin paragrafoheader(){
-    color: #fff;
-    font-size: 18px;
-    font-weight: 300;
-}
-
-@mixin paragrafo(){
-    color: #fff;
-    font-size: 16px;
-    font-weight: 300;
-}
-
-@mixin h3(){
-    font-size: 1em;
-    color: #0D0D0D;
-    margin: 20px auto;
-}
-
-@mixin hover(){
-    color: variaveis.$corHover;
-    transform: scale(1.1);
-}
-
-.line{
-    background: variaveis.$corHover;
-    content: "";
-    display: block;
-    width: 30px;
-    height: 5px;
-}
-
-.line2{
-    width: 150px;
-    height: 4px;
-    background-color: variaveis.$corHover;
-    margin: 10px auto;
-    border-radius: 5px;
-}
